@@ -1,0 +1,2 @@
+model_checkpoint_path: "d:\\Study\\tensorflow_API\\cifar_cnn\\model.ckpt"
+all_model_checkpoint_paths: "d:\\Study\\tensorflow_API\\cifar_cnn\\model.ckpt"
