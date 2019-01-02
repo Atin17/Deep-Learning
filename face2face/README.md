@@ -68,7 +68,7 @@ python pix2pix.py \
 
 For more information around training, have a look at Christopher Hesse's [pix2pix-tensorflow](https://github.com/affinelayer/pix2pix-tensorflow) implementation.
 
-#### 4. Export Model
+#### 3. Export Model
 
 1. First, we need to reduce the trained model so that we can use an image tensor as input: 
     ```
@@ -98,7 +98,7 @@ For more information around training, have a look at Christopher Hesse's [pix2pi
     - It returns a frozen model file `frozen_model.pb` in the model folder.
     
     
-#### 5. Run Demo
+#### 4. Run Demo
 
 ```
 python run_webcam.py --source 0 --show 0 --landmark-model shape_predictor_68_face_landmarks.dat --tf-model face2face-reduced-model/frozen_model.pb
