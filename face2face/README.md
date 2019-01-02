@@ -2,6 +2,7 @@
 
 This is a pix2pix demo that learns from facial landmarks and translates this into a face. A webcam-enabled application is also provided that translates your face to the trained face in real-time.
 
+
 ## Getting Started
 
 
@@ -116,6 +117,8 @@ Input:
 Example:
 
 ![example](example.gif)
+
+P.S: I think that if I removed my beard, the model would give better results!!! XD 
 
 ## Requirements
 - [Anaconda / Python 3.5 or 3.6](https://www.continuum.io/downloads)
