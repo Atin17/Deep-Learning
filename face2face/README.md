@@ -7,7 +7,7 @@ This is a pix2pix demo that learns from facial landmarks and translates this int
 
 #### 1. Generate Training Data
 
-![dataset](dataset.mp4)
+![dataset_example](dataset.gif)
 
 ```
 python generate_train_data.py --file data.mp4 --num 400 --landmark-model shape_predictor_68_face_landmarks.dat
