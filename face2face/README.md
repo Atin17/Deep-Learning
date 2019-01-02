@@ -4,20 +4,11 @@ This is a pix2pix demo that learns from facial landmarks and translates this int
 
 ## Getting Started
 
-#### 1. Prepare Environment
+
+#### 1. Generate Training Data
 
 ```
-# Clone this repo
-git clone git@github.com:datitran/face2face-demo.git
-
-# Create the conda environment from file (Mac OSX)
-conda env create -f environment.yml
-```
-
-#### 2. Generate Training Data
-
-```
-python generate_train_data.py --file angela_merkel_speech.mp4 --num 400 --landmark-model shape_predictor_68_face_landmarks.dat
+python generate_train_data.py --file data.mp4 --num 400 --landmark-model shape_predictor_68_face_landmarks.dat
 ```
 
 Input:
@@ -30,9 +21,8 @@ Output:
 
 - Two folders `original` and `landmarks` will be created.
 
-If you want to download my dataset, here is also the [video file](https://dl.dropboxusercontent.com/s/2g04onlkmkq9c69/angela_merkel_speech.mp4) that I used and the generated [training dataset](https://dl.dropboxusercontent.com/s/pfm8b0yogmum63w/dataset.zip) (400 images already split into training and validation).
 
-#### 3. Train Model
+#### 2. Train Model
 
 ```
 # Clone the repo from Christopher Hesse's pix2pix TensorFlow implementation
@@ -107,7 +97,6 @@ For more information around training, have a look at Christopher Hesse's [pix2pi
     
     - It returns a frozen model file `frozen_model.pb` in the model folder.
     
-I have uploaded a pre-trained frozen model [here](https://dl.dropboxusercontent.com/s/rzfaoeb3e2ta343/face2face_model_epoch_200.zip). This model is trained on 400 images with epoch 200.
     
 #### 5. Run Demo
 
@@ -127,7 +116,7 @@ Example:
 ![example](example.gif)
 
 ## Requirements
-- [Anaconda / Python 3.5](https://www.continuum.io/downloads)
+- [Anaconda / Python 3.5 or 3.6](https://www.continuum.io/downloads)
 - [TensorFlow 1.2](https://www.tensorflow.org/)
 - [OpenCV 3.0](http://opencv.org/)
 - [Dlib 19.4](http://dlib.net/)
